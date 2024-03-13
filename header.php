@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="<?php language_attributes()?>">
 
 <head>
     <meta charset="utf-8">
-    <title>Nishimura Design</title>
+    <title><?php the_title();?></title>
     <meta name="description" content="仮想のECショップ">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="<?php echo esc_url( get_template_directory_uri() ); ?>/img/favico.png">
@@ -14,7 +14,7 @@
     <?php wp_head(); ?>
 </head>
 
-<body>
+<body <?php body_class();?>>
 <header id="header" class="wrapper">
     <h1 class="site-title">
         <a href="<?php echo esc_url(home_url('/'));?>"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/logo.png" alt="Furniture Design"></a>
