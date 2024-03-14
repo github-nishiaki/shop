@@ -4,8 +4,16 @@
         <div id="top" class="wrapper">
             <div>
                 <div class="main-visual">
+                    <?php
+                    if (has_post_thumbnail()) {
+                        $id = get_post_thumbnail_id();//アイキャッチ画像のIDを取得
+                        $image = wp_get_attachment_image_src($id, 'full'); //IDから画像のURLを取得
+                    }else{
+                        $image = array(get_template_directory_uri() . '/img/main.jpg');
+                    }
+                    ?>
                     <img class="main-img-shot"
-                         src="<?php the_post_thumbnail()?>">
+                         src="<?php echo $image[0]?>" alt="">
                 </div>
             </div>
             <section id="news" class="wrapper">
