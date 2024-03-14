@@ -50,65 +50,50 @@
                 </h2>
                 <ul class="product-list">
                     <li>
-                        <a href="item1.html">
                             <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/1.jpg" alt="">
                             <p>クリアスカイコレクション</p>
                             <p>&yen;6,900 +tax</p>
-                        </a>
                     </li>
                     <li>
-                        <a href="item2.html">
                             <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/2.jpg" alt="">
                             <p>アドベンチャーブレイズ</p>
                             <p>&yen;9,000 +tax</p>
-                        </a>
+
                     </li>
                     <li>
-                        <a href="item3.html">
                             <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/3.jpg" alt="">
                             <p>ヴィンテージウェーブ</p>
                             <p>&yen;5,900 +tax</p>
-                        </a>
                     </li>
                     <li>
-                        <a href="item4.html">
                             <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/4.jpg" alt="">
                             <p>フレッシュブリーズティー
                             </p>
                             <p>&yen;9,000 +tax</p>
-                        </a>
                     </li>
                     <li>
-                        <a href="item5.html">
                             <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/5.jpg" alt="">
                             <p>サマーソニックス
                             </p>
                             <p>&yen;19,999 +tax</p>
-                        </a>
                     </li>
                     <li>
-                        <a href="item6.html">
                             <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/6.jpg" alt="">
                             <p>ラディアントローズシャツ
                             </p>
                             <p>&yen;7,900 +tax</p>
-                        </a>
                     </li>
                     <li>
-                        <a href="item7.html">
                             <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/7.jpg" alt="">
                             <p>ワンダフルウェーブウェア
                             </p>
                             <p>&yen;4,800 +tax</p>
-                        </a>
                     </li>
                     <li>
-                        <a href="item8.html">
                             <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/8.jpg" alt="">
                             <p>エコーインフィニティティー
                             </p>
                             <p>&yen;10,000 +tax</p>
-                        </a>
                     </li>
                 </ul>
                 <a  href="<?php echo esc_url(home_url('/'));?>product/" class="btn02 rotatefront"><span>もっと見る</span><span>View More</span></a>

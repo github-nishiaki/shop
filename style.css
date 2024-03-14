@@ -211,6 +211,12 @@ li {
     width: 23%;
     margin-bottom: 30px;
 }
+.product-list li img:hover {
+    opacity: 0.7;
+    transition: 0.3s ease-in-out;
+
+
+}
 
 #top {
     padding-top: 80px;
