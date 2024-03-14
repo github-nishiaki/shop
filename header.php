@@ -23,7 +23,7 @@
     <nav id="navi">
         <ul class="nav-menu">
             <li><a href="<?php echo esc_url(home_url('/'));?>/product">PRODUCT</a></li>
-            <li><a href="<?php echo esc_url(home_url('/'));?>/company">COMPANY</a></li>
+            <li><a href="<?php echo esc_url(home_url('/'));?>#company">COMPANY</a></li>
             <li><a href="mailto:xxxxx@xxx.xxx?subject=お問い合わせ">CONTACT</a></li>
         </ul>
     </nav>

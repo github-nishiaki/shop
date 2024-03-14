@@ -111,7 +111,7 @@
                         </a>
                     </li>
                 </ul>
-                <a  href="#" class="btn02 rotatefront"><span>もっと見る</span><span>View More</span></a>
+                <a  href="<?php echo esc_url(home_url('/'));?>product/" class="btn02 rotatefront"><span>もっと見る</span><span>View More</span></a>
             </div>
         </section>
         <section id="q">

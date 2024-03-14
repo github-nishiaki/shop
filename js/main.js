@@ -44,8 +44,14 @@ $(function () {
             $(Box).slideDown(500);          //アコーディオンを開く
         });
     });
+    const main = document.getElementById("item-main");
+    const img = document.querySelectorAll("#image_file")
+
+    img.forEach(function (image) {
+        image.addEventListener("click", function () {
+            main.src = image.src;
+        });
+    });
 
 
-
-    Resources
 });
