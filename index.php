@@ -111,8 +111,51 @@
                         </a>
                     </li>
                 </ul>
-                <a class="link-text" href="products.html">View More</a>
+                <a  href="#" class="btn02 rotatefront"><span>もっと見る</span><span>View More</span></a>
             </div>
+        </section>
+        <section id="q">
+            <h2 class="q-title">Q.よくある質問</h2>
+            <ul class="accordion-area">
+                <li>
+                    <section>
+                        <h3 class="title">質問: 「この洋服はどのように洗えますか？」</h3>
+                        <div class="box">
+                            <p>返答: 「製品の洗濯方法については、洗濯表示をご確認ください。一般的には手洗いやドライクリーニングが推奨されますが、洗濯機での洗濯も可能な場合があります。」</p>
+                        </div>
+                    </section>
+                </li>
+                <li>
+                    <section>
+                        <h3 class="title">質問: この洋服はサイズ交換可能ですか？</h3>
+                        <div class="box">
+                            <p>返答: 「はい、商品の未使用の場合に限り、サイズ交換を承っております。お買い上げから一定期間内であれば、サイズの変更や返品も可能です。」</p>
+                        </div>
+                    </section>
+                </li>
+                <li>
+                    <section>
+                        <h3 class="title">質問: 「このデザインの洋服は他に何色展開がありますか？」</h3>
+                        <div class="box">
+                            <p>返答: 「このデザインにはさまざまなカラーオプションがございます。在庫状況や季節によって異なりますので、店舗スタッフにお尋ねいただくか、オンラインストアをご確認ください。」</p>
+                        </div>
+                    </section>
+                    <section>
+                        <h3 class="title">質問: 「この素材は肌に優しいですか？」</h3>
+                        <div class="box">
+                            <p>返答: 「当店の洋服は素材にこだわっており、肌に優しい素材を選んでいます。ただし、個々の皮膚によって異なる場合がありますので、ご購入前に素材を確認されることをお勧めします。」</p>
+                        </div>
+                    </section>
+                    <section>
+                        <h3 class="title">質問: 「この洋服はどの季節に適していますか？」</h3>
+                        <div class="box">
+                            <p>返答: 「この洋服は通気性がよく、軽量な素材でできていますので、春から夏にかけての季節に最適です。また、レイヤリングして秋や冬にも着用いただけるデザインです。」</p>
+                        </div>
+                    </section>
+
+                </li>
+            </ul>
+
         </section>
         <section id="company" class="">
             <div class="text">
