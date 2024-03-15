@@ -33,7 +33,9 @@
 
 
                 <?php endwhile; ?>
+                <a href="<?php echo esc_url(home_url('/'));?>" class="btnshine">戻る</a>
             </section>
+
 
 
         </div>

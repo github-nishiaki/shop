@@ -1,3 +1,19 @@
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const images = document.querySelectorAll(".product-list img");
+        const mainImage = document.getElementById("item-main");
+        const itemTitle = document.getElementById("item-title");
+        const itemPrice = document.getElementById("item-price");
+
+        images.forEach(function (image) {
+            image.addEventListener("click", function () {
+                mainImage.src = image.src;
+                itemTitle.textContent = image.nextElementSibling.textContent;
+                itemPrice.textContent = image.nextElementSibling.nextElementSibling.textContent;
+            });
+        });
+    });
+</script>
 <?php get_header() ?>
     <main>
         <section id="top" class="wrapper">
@@ -43,9 +59,9 @@
                     </li>
                     <li>
                             <img  id="image_file" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/7.jpg" alt="">
-                            <p>ワンダフルウェーブウェア
+                            <p >ワンダフルウェーブウェア
                             </p>
-                            <p>&yen;4,800 +tax</p>
+                            <p >&yen;4,800 +tax</p>
                     </li>
                     <li>
                             <img id="image_file" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/8.jpg" alt="">
@@ -61,7 +77,7 @@
                 </div>
 
                 <div class="item-info">
-                    <h1 class="item-title">TOTALLY Short Sleeve Shirt</h1>
+                    <h1 id="item-title" class="item-title">TOTALLY Short Sleeve Shirt</h1>
                     <p>
                         商品説明文が入ります。<br>
                         テキストテキストテキストテキストテキストテキストテキスト
@@ -72,7 +88,7 @@
                         テキストテキストテキスト
                     </p>
 
-                    <p>￥9,999 +tax</p>
+                    <p id="item-price">￥9,999 +tax</p>
 
                     <table class="order-table">
                         <thead>
@@ -156,6 +172,8 @@
                     </table>
                 </div>
             </div>
+            <a href="<?php echo esc_url(home_url('/'));?>" class="btnshine">戻る</a>
+
         </section>
     </main>
 

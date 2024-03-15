@@ -15,6 +15,8 @@
 <?php endif; ?>
 
             </div>
+            <a href="<?php echo esc_url(home_url('/'));?>" class="btnshine">戻る</a>
+
         </section>
     </main>
 

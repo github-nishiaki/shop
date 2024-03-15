@@ -404,7 +404,7 @@ li {
     width: 48px;
     display: inline-block;
     text-align: center;
-    background: #5bc8ac;
+    background: #333;
     color: #fff;
     font-size: 14px;
 }
@@ -471,7 +471,7 @@ li {
     width: 280px;
     display: block;
     letter-spacing: 0.05em;
-    background: #5bc8ac;
+    background: #333;
     color: #fff;
     font-weight: bold;
     font-size: 20px;
@@ -827,10 +827,47 @@ table {
     transform: rotateX(90deg);/*はじめはX軸に90度回転*/
     transform-origin: 0 50%  -25px;/* 回転する起点 */
 }
+.btnshine{
+    /*キラッと光る基点とするためrelativeを指定*/
+    position: relative;
+    /*ボタンの形状*/
+    display:inline-block;
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    outline: none;
+    overflow: hidden;
+    margin-top: 50px;
+}
 
 /*hoverをした後の形状*/
 .rotatefront:hover span:nth-child(2) {
     transform: rotateX(0deg);/* X軸に0度回転 */
+}
+/*キラッと光る*/
+.btnshine::before {
+    content: '';
+    /*絶対配置でキラッと光るの位置を決める*/
+    position: absolute;
+    top: 0;
+    left: -75%;
+    /*キラッと光る形状*/
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+    transform: skewX(-25deg);
+}
+
+/*hoverした際の移動のアニメーション*/
+.btnshine:hover::before {
+    animation: shine 0.7s;
+}
+
+@keyframes shine {
+    100% {
+        left: 125%;
+    }
 }
 
 
@@ -851,4 +888,7 @@ table {
         width: 160px;
         font-size: 16px;
     }
+
+
+
 }
